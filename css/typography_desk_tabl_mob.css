@@ -8,7 +8,7 @@
     font-size: 72px;
     font-weight: 600;
     line-height: 105%;
-    letter-spacing: 0.15px;
+    letter-spacing: 2.15px;
 }
 
 .heading-1-accent {
@@ -98,4 +98,7 @@
         font-style: italic;
     }
 
+    .medium{
+     letter-spacing: -0.02px;
+    }
 }

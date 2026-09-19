@@ -32,3 +32,15 @@ body {
 .burger {
     display: none;
 }
+
+section {
+    padding: 0 40px;
+}
+
+
+@media (max-width: 380px) {
+
+    section {
+        padding: 0 16px;
+    }
+}

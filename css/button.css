@@ -1,0 +1,47 @@
+.btn-primary {
+    height: 64px;
+    min-width: 200px;
+    padding: 20px;
+    padding-left: 18px;
+    border-radius: 100px;
+    border: none;
+    text-decoration: none;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.02);
+} 
+
+.btn-primary-coffee {
+    width: 0;
+    opacity: 0;
+    margin-left: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-left 0.3s ease;
+}
+
+.btn-primary-arrow {
+    opacity: 1;
+    margin-left: 8px;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-left 0.3s ease;
+}
+
+.btn-primary:hover .btn-primary-arrow {
+    width: 0;
+    opacity: 0;
+    margin-left: 0;
+}
+
+.btn-primary:hover .btn-primary-coffee {
+    width: 20px;
+    opacity: 1;
+    margin-left: 8px;
+}
