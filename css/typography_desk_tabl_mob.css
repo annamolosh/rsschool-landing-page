@@ -21,7 +21,7 @@
     font-size: 60px;
     font-weight: 600;
     line-height: 125%;
-    letter-spacing: 0.15px;
+    letter-spacing: 2px;
 }
 
 .heading-2-accent {
@@ -90,8 +90,6 @@
     
     .heading-2 {
         font-size: 32px;
-        font-weight: 600;
-        line-height: 125%;
     }
 
     .heading-2-accent {
@@ -99,6 +97,6 @@
     }
 
     .medium{
-     letter-spacing: -0.02px;
+        letter-spacing: -0.02px;
     }
 }

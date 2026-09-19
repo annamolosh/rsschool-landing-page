@@ -94,21 +94,17 @@ header {
 }
 
 .header {
-
     background-color: var(--color-bg-page);
 
 }
 
 .header__link {
-
     color: var(--color-text-primary);
-
 }
 
+
 .header__link:hover {
-
     color: var(--color-text-accent);
-
 }
 
 @media (max-width: 768px) {
