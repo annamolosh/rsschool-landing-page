@@ -3,6 +3,8 @@
     border-radius: 40px;
     background-size: cover;
     height: 644px;
+    max-width: 1360px;
+    width: 1360px;
 }
 
 .heading-1 > .heading-1-accent {
