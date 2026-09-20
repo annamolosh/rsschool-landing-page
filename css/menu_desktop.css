@@ -1,4 +1,7 @@
 /* MENU SECTION */
+.menu-h1{
+    display: none;
+}
 
 .menu-section {
     padding: 0 40px 0 40px;
@@ -17,6 +20,9 @@
     max-width: 800px;
 }
 
+.menu-cup.active::after {
+    transform: scaleX(1);
+}
 
 /* MENU TABS */
 
@@ -89,6 +95,20 @@ label.menu-tab > input[type="radio"] {
     display: flex;
 }
 
+.menu-header:has(input#menu-tab-radio-tea[type="radio"]:checked) + .menu-grid > article.menu-card-tea {
+    display: flex;
+}
+
+.menu-header:has(input#menu-tab-radio-tea[type="radio"]:checked) + .menu-grid + .load-more-container {
+    display: none;
+}
+
+.menu-header:has(input#menu-tab-radio-desserts[type="radio"]:checked) + .menu-grid > article.menu-card-desserts {
+    display: flex;
+}
+
+
+
 /* MENU GRID */
 
 .menu-grid {
@@ -127,7 +147,7 @@ label.menu-tab > input[type="radio"] {
     display: flex;
     flex-direction: column;
 
-    padding: 16px;
+    padding: 20px;
 
     height: inherit;
     justify-content: space-between;
@@ -140,10 +160,6 @@ label.menu-tab > input[type="radio"] {
 
 .menu-card-title {
     margin-bottom: 12px;
-}
-
-.menu-card-description {
-    margin-bottom: 36px;
 }
 
 .menu-card-price {
