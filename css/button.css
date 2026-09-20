@@ -92,3 +92,29 @@
     justify-content:center;
     align-items: flex-start;
 }
+
+.button-social-media {
+    height: 60px;
+    padding: 18px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-primary);
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--color-text-inverse);
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    
+    transition: transform 0.3s ease;
+}
+
+.button-social-media:hover {
+    transform: scale(1.02);
+    border-color: var(--color-bg-page);
+    background-color: var(--color-bg-page);
+    color: var(--color-text-primary);
+} 

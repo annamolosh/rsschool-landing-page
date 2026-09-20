@@ -93,6 +93,10 @@ header {
     margin-right: 8px;
 }
 
+.menu-cup-link {
+    display: flex;
+    flex-direction: row;
+}
 .header {
     background-color: var(--color-bg-page);
 

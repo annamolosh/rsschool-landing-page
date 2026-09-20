@@ -3,7 +3,7 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 .no-scroll {
@@ -25,8 +25,6 @@ body {
 
 .global-div {
     position: relative;
-    overflow-x: hidden;
-    width: 100vw;
 }
 
 .burger {
@@ -39,6 +37,36 @@ section {
     justify-content: center;
 }
 
+ul, ol, ul li, ol li {
+  all: unset; 
+}
+
+a {
+  all: unset; 
+  cursor: pointer; 
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
 
 @media (max-width: 380px) {
 
