@@ -1,0 +1,176 @@
+header {
+    display: flex;
+    max-height: 3.75rem;
+    height: 3.75rem;
+    margin: 20px 40px 20px 40px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.container-fixed {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item > a {
+    display: inline-block;
+}
+
+.nav-list > .nav-item:nth-child(1) {
+    margin-right: 40px;
+}
+
+.nav-list > .nav-item:nth-child(2) {
+    margin-right: 40px;
+}
+
+.nav-list > .nav-item:nth-child(3) {
+    margin-right: 40px;
+}
+
+.nav-list > .nav-item:last-child {
+    margin-right: 0;
+}
+
+.site-icon {
+    width: 100px;
+}
+
+.site-icon {
+
+    color: var(--color-text-primary);
+
+}
+
+.dark-theme .site-icon {
+
+    color: var(--color-text-inverse);
+
+}
+
+.theme-switch-menu-cup > .theme-switch {
+    margin-right: 24px;
+}
+
+.theme-switch-menu-cup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.menu-cup {
+    display: flex;
+    align-items: center;
+}
+
+.menu-cup > img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-cup > p {
+    margin-right: 8px;
+}
+
+.menu-cup-link {
+    display: flex;
+    flex-direction: row;
+}
+.header {
+    background-color: var(--color-bg-page);
+
+}
+
+.header__link {
+    color: var(--color-text-primary);
+}
+
+
+.header__link:hover {
+    color: var(--color-text-accent);
+}
+
+@media (max-width: 768px) {
+
+    header {
+        margin: 20px 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .theme-switch-menu-cup {
+        margin-left: auto;
+    }
+
+    .menu-cup {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 1px solid var(--color-text-primary);
+        border-radius: 50%;
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+
+    }
+
+    .burger span {
+        width: 16px;
+        height: 1px;
+        background-color: var(--color-border-inverse);
+        border-radius: 2px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    header {
+        margin: 20px 16px;
+    }
+
+    .theme-switch-menu-cup {
+        margin-left: auto;
+    }
+
+    .theme-switch-menu-cup > .theme-switch {
+        margin-right: 12px;
+    }
+
+    .burger {
+        width: 44px;
+        height: 44px;
+    }
+
+}
