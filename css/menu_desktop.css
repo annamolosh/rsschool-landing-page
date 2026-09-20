@@ -1,0 +1,239 @@
+/* MENU SECTION */
+.menu-h1{
+    display: none;
+}
+
+.menu-section {
+    padding: 0 40px 0 40px;
+}
+
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.menu-header > .heading-2{
+    text-align: center;
+    max-width: 800px;
+}
+
+.menu-cup.active::after {
+    transform: scaleX(1);
+}
+
+/* MENU TABS */
+
+.menu-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 40px;
+}
+
+.menu-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 16px;
+
+    border: 1px solid var(--color-border-primary);
+    border-radius: 100px;
+
+    background-color: transparent;
+    color: var(--color-text-primary);
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+label.menu-tab > input[type="radio"] {
+    display: none;
+}
+
+.menu-tab:hover {
+    background-color: var(--color-bg-container);
+    border-color: transparent;
+
+    color: var(--color-text-inverse);
+}
+
+.menu-tab-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-text-inverse);
+}
+
+.menu-tab:has(input:checked) {
+    background-color: var(--color-bg-container);
+    border-color: transparent;
+
+    color: var(--color-text-inverse);
+}
+
+.menu-header:has(input#menu-tab-radio-coffee[type="radio"]:checked) + .menu-grid > article.menu-card-coffee {
+    display: flex;
+}
+
+.menu-header:has(input#menu-tab-radio-tea[type="radio"]:checked) + .menu-grid > article.menu-card-tea {
+    display: flex;
+}
+
+.menu-header:has(input#menu-tab-radio-tea[type="radio"]:checked) + .menu-grid + .load-more-container {
+    display: none;
+}
+
+.menu-header:has(input#menu-tab-radio-desserts[type="radio"]:checked) + .menu-grid > article.menu-card-desserts {
+    display: flex;
+}
+
+
+
+/* MENU GRID */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 40px;
+}
+
+
+/* MENU CARD */
+
+.menu-card {
+    display: none;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    width: 310px;
+    height: 506px;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 40px;
+
+    background-color: transparent;
+}
+
+.menu-card-image {
+    display: block;
+
+    /* width: 310px; */
+    border-radius: 40px;
+
+    object-fit: cover;
+}
+
+.menu-card-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    height: inherit;
+    justify-content: space-between;
+}
+
+.menu-card-title-content {
+    flex: display;
+    flex-direction: column;
+}
+
+.menu-card-title {
+    margin-bottom: 12px;
+}
+
+.menu-card-price {
+    display: block;
+
+    margin-top: auto;
+    padding-top: 20px;
+
+    color: var(--color-text-primary);
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.button-load {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-grid .menu-card:nth-child(6),
+    .menu-grid .menu-card:nth-child(7),
+    .menu-grid .menu-card:nth-child(5),
+    .menu-grid .menu-card:nth-child(8) {
+        display: none !important;
+    }
+
+    .button-load {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .load-more-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .menu-tabs {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu-tab-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 0 19px;
+    }
+
+    .menu-section {
+        padding: 0 16px 0 16px;
+    }
+
+    .menu-grid .menu-card:nth-child(6),
+    .menu-grid .menu-card:nth-child(7),
+    .menu-grid .menu-card:nth-child(5),
+    .menu-grid .menu-card:nth-child(8) {
+        display: none !important;
+    }
+
+    .button-load {
+        display: flex;
+        margin-top: 40px;
+    }
+}

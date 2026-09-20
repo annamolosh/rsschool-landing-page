@@ -1,0 +1,63 @@
+.buttons-store {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons-store > button:first-child {
+    margin-right: 20px;
+}
+
+.buttons-mobileapp {
+    max-width: 630px;
+}
+
+.buttons-mobileapp > h2,
+.buttons-mobileapp > p {
+    margin-bottom: 40px;
+}
+
+.screen-phone {
+    width: 630px;
+    height: 630px;
+}
+
+.container-mobileapp {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .buttons-mobileapp {
+        max-width: 688px;
+        margin-bottom: 100px;
+    }
+    
+    .container-mobileapp {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .buttons-store {
+        flex: wrap;
+        flex-direction: column;
+    }
+
+    .screen-phone {
+        width: 348px;
+        height: 348px;
+    }
+
+    .buttons-mobileapp {
+        margin-bottom: 40px;
+    }
+
+    .buttons-store > .button-store:first-child {
+        margin-bottom: 20px;
+    }
+
+
+}

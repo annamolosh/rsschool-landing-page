@@ -1,0 +1,103 @@
+/* Typography */
+
+
+/* Heading */
+
+.heading-1 {
+    font-family: "Inter", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+    letter-spacing: 2.15px;
+}
+
+.heading-1-accent {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+}
+
+.heading-2 {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 1.8px;
+}
+
+.heading-2-accent {
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+}
+
+.heading-3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.15px;
+}
+
+
+/* BODY */
+
+.medium {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
+
+.caption {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+}
+
+
+/* ACTION */
+
+.link , 
+.button-typog {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
+
+.burger-link {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.15px;
+}
+
+
+@media (max-width: 380px) {
+    .heading-1 {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 115%;
+    }
+
+    .heading-1-accent {
+        font-style: italic;
+    }
+    
+    .heading-2 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .heading-2-accent {
+        font-style: italic;
+    }
+
+    .medium{
+        letter-spacing: -0.02px;
+    }
+}
